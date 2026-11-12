@@ -8,3 +8,6 @@ git push
 
 git clone <repo>
 git pull origin main
+
+git log --oneline
+git reset --soft HEAD~2
