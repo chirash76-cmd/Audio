@@ -11,3 +11,4 @@ git pull origin main
 
 git log --oneline
 git reset --soft HEAD~2
+git push --force-with-lease origin main
