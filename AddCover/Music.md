@@ -14,6 +14,7 @@
 - Session 11: Downloaded 34 YouTube URLs as MP3 with embedded thumbnails and cleaned ID3 tags. 1 URL unavailable (Free Bird).
 - Session 12: Downloaded 3 YouTube URLs as MP3 with embedded thumbnails and cleaned ID3 tags (Pardesiya kept as a second version).
 - Session 13: Downloaded 16 YouTube URLs as MP3 with embedded thumbnails and cleaned ID3 tags. 1 duplicate skipped (The Lazy Song); Blue loop replaced with normal version.
+- Session 14: Downloaded 1 YouTube URL (Cupid official MV); replaced the looped lyric version.
 
 ## Tools Used
 - **yt-dlp** 2026.10.21 (`/usr/bin/yt-dlp`, installed via pacman) — works out of the box, no node/deno required
@@ -229,6 +230,15 @@ Source: `N4wK3NtVRT0` (Pardesiya song version), `HeBJMzrM7hU` (Nadaaniyan), `oAV
 | 14 | `Hay Re Tor Bina -Skindo.mp3` | 3.62 MB | Hay Re Tor Bina | Skindo | 3:16, AI vocals |
 | 15 | `Dheem Ta Dare -Anandalaya.mp3` | 2.00 MB | Dheem Ta Dare | Anandalaya | 2:55 |
 | 16 | `Har Kisike Dil Me Ek Ladki Ka Khayal Rehta Hai -Alka Yagnik.mp3` | 6.62 MB | Har Kisike Dil Me Ek Ladki Ka Khayal Rehta Hai | Alka Yagnik | 5:49 |
+
+## Output Files (Session 14)
+
+| # | File | Size | Title | Artist | Notes |
+|---|------|------|-------|--------|-------|
+| 1 | `Cupid -FIFTY FIFTY.mp3` | 3.44 MB | Cupid | FIFTY FIFTY | 3:23; replaced the 19:10 looped lyric version from Session 11 |
+
+Source: `Qc7_zRjH808` — official MV, uploaded 2023.
+
 
 
 
