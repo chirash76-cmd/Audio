@@ -1,0 +1,10 @@
+-git init
+git add .
+git commint -m "2026-11-12(0)"
+git branch -M main
+-git remote add origin <repo>
+-git push -u origin main
+git push
+
+git clone <repo>
+git pull origin main
