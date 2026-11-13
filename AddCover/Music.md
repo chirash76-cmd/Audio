@@ -16,6 +16,7 @@
 - Session 13: Downloaded 16 YouTube URLs as MP3 with embedded thumbnails and cleaned ID3 tags. 1 duplicate skipped (The Lazy Song); Blue loop replaced with normal version.
 - Session 14: Downloaded 1 YouTube URL (Cupid official MV); replaced the looped lyric version.
 - Session 15: Downloaded 9 unique YouTube URLs (10 given, 1 duplicate) as MP3 with embedded thumbnails and cleaned ID3 tags.
+- Session 16: Downloaded 1 YouTube URL (Levitating) as MP3 with embedded thumbnail and cleaned ID3 tags.
 
 ## Tools Used
 - **yt-dlp** 2026.10.21 (`/usr/bin/yt-dlp`, installed via pacman) — works out of the box, no node/deno required
@@ -224,7 +225,7 @@ Source: `N4wK3NtVRT0` (Pardesiya song version), `HeBJMzrM7hU` (Nadaaniyan), `oAV
 | 7 | `En Malare -madrascala.mp3` | 4.35 MB | En Malare | madrascala | 3:56 |
 | 8 | `Nadiyondu -Siddhartha Belmannu.mp3` | 4.38 MB | Nadiyondu | Siddhartha Belmannu | 4:32 |
 | 9 | `Menake -Tanmay Gururaj.mp3` | 4.81 MB | Menake | Tanmay Gururaj | 3:27 |
-| 10 | `Kiliye Kiliye -S. Janaki.mp3` | 2.55 MB | Kiliye Kiliye | S. Janaki | 2:05 |
+| 10 | `Kiliye Kiliye -S. Janaki.mp3` | 2.50 MB | Kiliye Kiliye | S. Janaki | 2:01, trimmed first 4s |
 | 11 | `Sunroof -Nicky Youre.mp3` | 3.51 MB | Sunroof | Nicky Youre | 2:55 |
 | 12 | `Jenina Goodu Naavella -Rajesh Krishnan.mp3` | 3.83 MB | Jenina Goodu Naavella | Rajesh Krishnan | 5:24 |
 | 13 | `Kaise Batabu -Sadri Vibe.mp3` | 4.91 MB | Kaise Batabu | Sadri Vibe | 3:58, AI vocals |
@@ -248,13 +249,22 @@ Source: `Qc7_zRjH808` — official MV, uploaded 2023.
 |---|------|------|-------|--------|-------|
 | 1 | `Crystallize -Lindsey Stirling.mp3` | 4.57 MB | Crystallize | Lindsey Stirling | 5:00, m4a fallback after 403 |
 | 2 | `Carol of the Bells -Lindsey Stirling.mp3` | 3.42 MB | Carol of the Bells | Lindsey Stirling | 3:06 |
-| 3 | `Rapp Snitch Knishes -MF DOOM.mp3` | 3.05 MB | Rapp Snitch Knishes | MF DOOM | 2:53, instrumental |
+| 3 | `Rapp Snitch Knishes -MF DOOM.mp3` | 1.11 MB | Rapp Snitch Knishes | MF DOOM | 0:51, trimmed to 51s (instrumental) |
 | 4 | `No Limits -Zayde Wolf.mp3` | 3.71 MB | No Limits | Zayde Wolf | 3:18 |
 | 5 | `Roundtable Rival -Lindsey Stirling.mp3` | 3.75 MB | Roundtable Rival | Lindsey Stirling | 3:38 |
 | 6 | `Elements -Lindsey Stirling.mp3` | 3.96 MB | Elements | Lindsey Stirling | 4:07 |
 | 7 | `Pirates Of The Caribbean -2CELLOS.mp3` | 3.44 MB | Pirates Of The Caribbean | 2CELLOS | 3:09 |
 | 8 | `Wellerman -Nathan Evans.mp3` | 2.53 MB | Wellerman | Nathan Evans | 2:36 |
 | 9 | `Lose My Mind -Don Toliver.mp3` | 3.54 MB | Lose My Mind | Don Toliver | 3:29, feat. Doja Cat dropped |
+
+## Output Files (Session 16)
+
+| # | File | Size | Title | Artist | Notes |
+|---|------|------|-------|--------|-------|
+| 1 | `Levitating -Dua Lipa.mp3` | 3.76 MB | Levitating | Dua Lipa | 3:50, DaBaby feature dropped |
+
+Source: `TUVcZfQe-Kw` — official music video.
+
 
 
 
