@@ -15,6 +15,7 @@
 - Session 12: Downloaded 3 YouTube URLs as MP3 with embedded thumbnails and cleaned ID3 tags (Pardesiya kept as a second version).
 - Session 13: Downloaded 16 YouTube URLs as MP3 with embedded thumbnails and cleaned ID3 tags. 1 duplicate skipped (The Lazy Song); Blue loop replaced with normal version.
 - Session 14: Downloaded 1 YouTube URL (Cupid official MV); replaced the looped lyric version.
+- Session 15: Downloaded 9 unique YouTube URLs (10 given, 1 duplicate) as MP3 with embedded thumbnails and cleaned ID3 tags.
 
 ## Tools Used
 - **yt-dlp** 2026.10.21 (`/usr/bin/yt-dlp`, installed via pacman) — works out of the box, no node/deno required
@@ -239,6 +240,23 @@ Source: `N4wK3NtVRT0` (Pardesiya song version), `HeBJMzrM7hU` (Nadaaniyan), `oAV
 
 Source: `Qc7_zRjH808` — official MV, uploaded 2023.
 
+## Output Files (Session 15)
+
+10 URLs → 9 unique (duplicate `EKkzbbLYPuI` deduped). All downloaded with embedded covers and clean tags. `Crystallize` initially failed with HTTP 403 and succeeded on retry with `-f "bestaudio[ext=m4a]/bestaudio"`.
+
+| # | File | Size | Title | Artist | Notes |
+|---|------|------|-------|--------|-------|
+| 1 | `Crystallize -Lindsey Stirling.mp3` | 4.57 MB | Crystallize | Lindsey Stirling | 5:00, m4a fallback after 403 |
+| 2 | `Carol of the Bells -Lindsey Stirling.mp3` | 3.42 MB | Carol of the Bells | Lindsey Stirling | 3:06 |
+| 3 | `Rapp Snitch Knishes -MF DOOM.mp3` | 3.05 MB | Rapp Snitch Knishes | MF DOOM | 2:53, instrumental |
+| 4 | `No Limits -Zayde Wolf.mp3` | 3.71 MB | No Limits | Zayde Wolf | 3:18 |
+| 5 | `Roundtable Rival -Lindsey Stirling.mp3` | 3.75 MB | Roundtable Rival | Lindsey Stirling | 3:38 |
+| 6 | `Elements -Lindsey Stirling.mp3` | 3.96 MB | Elements | Lindsey Stirling | 4:07 |
+| 7 | `Pirates Of The Caribbean -2CELLOS.mp3` | 3.44 MB | Pirates Of The Caribbean | 2CELLOS | 3:09 |
+| 8 | `Wellerman -Nathan Evans.mp3` | 2.53 MB | Wellerman | Nathan Evans | 2:36 |
+| 9 | `Lose My Mind -Don Toliver.mp3` | 3.54 MB | Lose My Mind | Don Toliver | 3:29, feat. Doja Cat dropped |
+
+
 
 
 
@@ -369,6 +387,7 @@ Removes `description`, `synopsis`, `purl`, `comment` URL added by `--add-metadat
 8. **android_vr client still 403 after deno install** — Even with deno available, the android_vr player client URLs returned 403 on download. Fixed by using `--extractor-args "youtube:player_client=web_music"` which downloads format 18 (360p mp4 with audio) and converts to mp3.
 9. **`silenceremove` ffmpeg filter too aggressive** — Using `silenceremove` with default params on Aarzu produced a 0.6s file from a 226s song. Fixed by using `silencedetect` to find silence boundaries, then trimming with `-t` to the last non-silence point.
 10. **ffmpeg cannot edit files in-place** — `ffmpeg -i input.mp3 ... -o input.mp3` fails. Must use a temp file then `mv`.
+11. **HTTP 403 on a single track (Session 15)** — `Crystallize` failed with "unable to download video data: HTTP Error 403" on the default bestaudio. Retrying with `-f "bestaudio[ext=m4a]/bestaudio"` worked.
 
 ## Current Directory
 `/home/bluepick/Music/AddCover/`

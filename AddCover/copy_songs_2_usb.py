@@ -48,8 +48,10 @@ DestinationUSB = usb/"Audio/"
 WipeUSB = True
 
 os.chdir(MusicFolder)
-folders = ["New","Animated","Music","Hindi","Phonk","OldClassic","Rap","Remix","Football"]
-
+# folders = ["New","Animated","Music","Hindi","Phonk","OldClassic","Rap","Remix","Football"]
+folders = os.listdir(MusicFolder)
+folders.remove("AddCover")
+folders.remove("UNP")
 
 #Main
 if "Audio" not in os.listdir(usb):
