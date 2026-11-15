@@ -17,6 +17,7 @@
 - Session 14: Downloaded 1 YouTube URL (Cupid official MV); replaced the looped lyric version.
 - Session 15: Downloaded 9 unique YouTube URLs (10 given, 1 duplicate) as MP3 with embedded thumbnails and cleaned ID3 tags.
 - Session 16: Downloaded 1 YouTube URL (Levitating) as MP3 with embedded thumbnail and cleaned ID3 tags.
+- Session 17: Re-downloaded 3 tracks (Wrap Me In Plastic, Shinunoga E-Wa, Espresso) as MP3 with embedded thumbnails and cleaned ID3 tags.
 
 ## Tools Used
 - **yt-dlp** 2026.10.21 (`/usr/bin/yt-dlp`, installed via pacman) — works out of the box, no node/deno required
@@ -264,6 +265,19 @@ Source: `Qc7_zRjH808` — official MV, uploaded 2023.
 | 1 | `Levitating -Dua Lipa.mp3` | 3.76 MB | Levitating | Dua Lipa | 3:50, DaBaby feature dropped |
 
 Source: `TUVcZfQe-Kw` — official music video.
+
+## Output Files (Session 17)
+
+Re-downloaded 3 tracks (previous copies no longer in AddCover).
+
+| # | File | Size | Title | Artist | Notes |
+|---|------|------|-------|--------|-------|
+| 1 | `Wrap Me In Plastic -MOMOLAND.mp3` | 3.90 MB | Wrap Me In Plastic | MOMOLAND | 3:15 |
+| 2 | `Shinunoga E-Wa -Fujii Kaze.mp3` | 1.99 MB | Shinunoga E-Wa | Fujii Kaze | 3:11 |
+| 3 | `Espresso -Sabrina Carpenter.mp3` | 3.01 MB | Espresso | Sabrina Carpenter | 2:54 |
+| 4 | `Swami Pardesh -Suraj Tratak.mp3` | 3.41 MB | Swami Pardesh | Suraj Tratak | 2:55, re-downloaded |
+
+
 
 
 
