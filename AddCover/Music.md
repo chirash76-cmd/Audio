@@ -18,6 +18,7 @@
 - Session 15: Downloaded 9 unique YouTube URLs (10 given, 1 duplicate) as MP3 with embedded thumbnails and cleaned ID3 tags.
 - Session 16: Downloaded 1 YouTube URL (Levitating) as MP3 with embedded thumbnail and cleaned ID3 tags.
 - Session 17: Re-downloaded 3 tracks (Wrap Me In Plastic, Shinunoga E-Wa, Espresso) as MP3 with embedded thumbnails and cleaned ID3 tags.
+- Session 18: Trimmed `Racing into the Night - YOASOBI.mp3` to 4:20.
 
 ## Tools Used
 - **yt-dlp** 2026.10.21 (`/usr/bin/yt-dlp`, installed via pacman) — works out of the box, no node/deno required
@@ -276,6 +277,13 @@ Re-downloaded 3 tracks (previous copies no longer in AddCover).
 | 2 | `Shinunoga E-Wa -Fujii Kaze.mp3` | 1.99 MB | Shinunoga E-Wa | Fujii Kaze | 3:11 |
 | 3 | `Espresso -Sabrina Carpenter.mp3` | 3.01 MB | Espresso | Sabrina Carpenter | 2:54 |
 | 4 | `Swami Pardesh -Suraj Tratak.mp3` | 3.41 MB | Swami Pardesh | Suraj Tratak | 2:55, re-downloaded |
+
+## Output Files (Session 18)
+
+| # | File | Size | Title | Artist | Notes |
+|---|------|------|-------|--------|-------|
+| 1 | `Racing into the Night - YOASOBI.mp3` | 4.05 MB | Racing into the Night - YOASOBI | YOASOBI | trimmed to 4:20 (was 4:35) |
+
 
 
 
