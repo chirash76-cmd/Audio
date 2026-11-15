@@ -49,7 +49,7 @@ def ListSorter(folderpath):
 #Main
 
 #Filter Folders
-ordered_folders = ["Animated","Music","Hindi"]
+ordered_folders = ["Favourites","Animated","Music","Hindi"]
 folders = os.listdir(musicFolderPath)
 
 new_folders = [folder for folder in folders if folder.startswith("New")]
