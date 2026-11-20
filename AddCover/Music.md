@@ -19,6 +19,7 @@
 - Session 16: Downloaded 1 YouTube URL (Levitating) as MP3 with embedded thumbnail and cleaned ID3 tags.
 - Session 17: Re-downloaded 3 tracks (Wrap Me In Plastic, Shinunoga E-Wa, Espresso) as MP3 with embedded thumbnails and cleaned ID3 tags.
 - Session 18: Trimmed `Racing into the Night - YOASOBI.mp3` to 4:20.
+- Session 19: Downloaded 8 YouTube URLs as MP3 with embedded thumbnails and cleaned ID3 tags (Coqueta needed m4a fallback after 403).
 
 ## Tools Used
 - **yt-dlp** 2026.10.21 (`/usr/bin/yt-dlp`, installed via pacman) — works out of the box, no node/deno required
@@ -283,6 +284,20 @@ Re-downloaded 3 tracks (previous copies no longer in AddCover).
 | # | File | Size | Title | Artist | Notes |
 |---|------|------|-------|--------|-------|
 | 1 | `Racing into the Night - YOASOBI.mp3` | 4.05 MB | Racing into the Night - YOASOBI | YOASOBI | trimmed to 4:20 (was 4:35) |
+
+## Output Files (Session 19)
+
+| # | File | Size | Title | Artist | Notes |
+|---|------|------|-------|--------|-------|
+| 1 | `Drag Me Down -One Direction.mp3` | 3.62 MB | Drag Me Down | One Direction | 3:12 |
+| 2 | `Bumble Bee -Bambee.mp3` | 3.05 MB | Bumble Bee | Bambee | 3:16 |
+| 3 | `Stereo Love -Edward Maya.mp3` | 3.26 MB | Stereo Love | Edward Maya | 3:04, radio edit |
+| 4 | `Coqueta -Grupo Frontera.mp3` | 3.75 MB | Coqueta | Grupo Frontera | 4:02, m4a fallback after 403 |
+| 5 | `Bilionera -Otilia.mp3` | 3.02 MB | Bilionera | Otilia | 3:02 |
+| 6 | `Let Me Love You -DJ Snake.mp3` | 3.54 MB | Let Me Love You | DJ Snake | 3:25, Justin Bieber feature dropped |
+| 7 | `Lights Camera Action -Timeflies.mp3` | 4.00 MB | Lights Camera Action | Timeflies | 3:33 |
+| 8 | `Criminal -Britney Spears.mp3` | 3.99 MB | Criminal | Britney Spears | 3:44 |
+
 
 
 

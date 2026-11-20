@@ -3,6 +3,7 @@ import os,shutil
 #Change These accordingly
 musicFolderPath = "/home/bluepick/Music/"
 usbFolderPath = "/run/media/bluepick/Rishaan/"
+usbFolderPath = "/home/bluepick/Documents/usb/"
 musicFolderName = "Audio"
 
 # musicFolderPath = os.path.join(musicFolderPath,"Sequence")
@@ -84,5 +85,8 @@ else:
     for folder in ordered_folders:
         folderPath = os.path.join(musicFolderPath,folder)
         copy_folder(folderPath,destinationMainFolderPath)
+    print("Performing Manual copy")
+    copy_folder("/home/bluepick/Music/Animated/Miku/",os.path.join(destinationMainFolderPath,"Animated/Miku"))
+    copy_folder("/home/bluepick/Music/Animated/Neuro-sama/",os.path.join(destinationMainFolderPath,"Animated/Neuro-sama"))
     print("\nProcess Completed!")
 

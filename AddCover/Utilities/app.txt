@@ -1,0 +1,97 @@
+Here are the main end-user features worth knowing:
+Folder setup
+- Source folder: choose the folder that contains your music/album folders.
+- Destination folder: choose the FAT32 USB drive or destination folder.
+- The app prevents the destination from being the source folder or inside it.
+Priority Folders
+- Add direct subfolders of the source as priority folders.
+- Priority folders are copied first, in the exact order shown.
+- Use Move Up / Move Down to change order.
+- Use Remove Selected to remove a priority entry.
+- A priority folder that is also excluded stays in the list but is shown struck through and is skipped.
+Excluded Folders
+- Add folders that should never be copied.
+- Exclusion is recursive: the folder and everything inside it is skipped.
+- Exclusions take precedence over priority settings.
+- No empty destination folder is created for excluded folders.
+Excluded File Types
+- Exclude file types such as:
+- .mp3
+- .flac
+- .wav
+- .jpg
+- .txt
+- *.log
+- Matching is case-insensitive, so .MP3 also excludes .mp3.
+- Rules apply at any depth in the source folder.
+- Folder names are not excluded by file-type rules.
+Copy behavior
+- Priority folders first, then remaining eligible folders/files.
+- Combined natural alphabetical sorting:
+- case-insensitive
+- letters before numbers
+- 2 before 10
+- deterministic order
+- Files are never renamed.
+- Existing destination files are not overwritten; conflicts are skipped and logged.
+- FAT32-invalid names and files larger than 4 GB are skipped.
+Progress and safety
+- Separate Copy Progress tab.
+- Shows:
+- current status
+- current folder
+- current file
+- files copied / total
+- bytes copied / total
+- progress bar
+- Background copying keeps the UI responsive.
+- You can switch tabs while copying.
+- Cancel works immediately; partial destination files are removed.
+- Completion summary shows copied, skipped, failed, and total data copied.
+Import / Export
+- Import Configuration and Export Configuration are in the bottom Configuration Backup section.
+- Version 2 JSON stores:
+- source folder
+- destination folder
+- priority folders in exact order
+- excluded folders
+- excluded file-type rules
+- Version 1 JSON files are still supported for priority-only lists.
+- Import offers Replace, Merge, or Cancel.
+- Invalid JSON leaves the current configuration unchanged.
+Automatic persistence
+- Settings are saved automatically per source folder.
+- Last source and destination are restored on launch.
+- Switching source folders loads that source’s own priority and exclusion lists.
+- Missing saved folders are warned about and skipped.
+Usability
+- Configuration tab scrolls vertically for small screens.
+- Excluded Folders and Excluded File Types are side by side.
+- Strictly readable in both light and dark themes.
+- Open Destination opens the selected destination folder with the system file manager.
+Good to know
+- File-type rules are suffix-style patterns; wildcard-in-the-middle rules like *song*.mp3 are not supported.
+- Excluded folders are selected from direct subfolders of the current source.
+- JSON paths are machine-specific, so a config exported on one computer may need path edits on another.
+Build · Big Pickle · 13.3s · 161.8 tok/s
+how to build the app?
++1 thought
+On this Linux system, build it out-of-source so the App folder stays clean:
+mkdir -p /tmp/opencode/musiccopier-build
+cd /tmp/opencode/musiccopier-build
+qmake6 /home/bluepick/Documents/opencode/App/MusicCopier.pro -o Makefile
+make -j4
+./MusicCopier
+After source code changes, only this is needed:
+cd /tmp/opencode/musiccopier-build
+make -j4
+If MusicCopier.pro changes, rerun:
+qmake6 /home/bluepick/Documents/opencode/App/MusicCopier.pro -o Makefile
+make -j4
+Requirements:
+- Qt 6 Base / Widgets development packages
+- qmake6
+- a C++17 compiler
+- make
+The existing built binary is already here:
+/tmp/opencode/musiccopier-build/MusicCopier

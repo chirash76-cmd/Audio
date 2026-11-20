@@ -1,0 +1,18 @@
+{
+    "destinationFolder": "/run/media/bluepick/Rishaan/Audio/",
+    "excludedFileTypes": [
+        ".md"
+    ],
+    "excludedFolders": [
+        "UNP",
+        "AddCover"
+    ],
+    "priorityFolders": [
+        "Favourites",
+        "Animated",
+        "Music",
+        "Hindi"
+    ],
+    "sourceFolder": "/home/bluepick/Music/",
+    "version": 2
+}
